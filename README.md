@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue-init2(vue-cli3) 骨架
 
 ### 文件导入
@@ -17,3 +18,7 @@
 ```javascript
 import HelloWorld from '@/components/HelloWorld.vue';
 ```
+=======
+# vue-component-test
+vue-component-test
+>>>>>>> bbe37cbf949f4d216ce2d01450a70f03667f222f
