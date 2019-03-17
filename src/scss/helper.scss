@@ -1,0 +1,91 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.alignc {
+  text-align: center;
+}
+
+.alignl {
+  text-align: left;
+}
+
+.alignr {
+  text-align: right;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.desc {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+@for $i from 0 through 10 {
+  $v: 10;
+
+  .mt#{$v * $i} {
+    margin-top: #{$v * $i}px !important;
+  }
+
+  .mb#{$v * $i} {
+    margin-bottom: #{$v * $i}px !important;
+  }
+
+  .ml#{$v * $i} {
+    margin-left: #{$v * $i}px !important;
+  }
+
+  .mr#{$v * $i} {
+    margin-right: #{$v * $i}px !important;
+  }
+}
+
+.line1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@for $i from 2 through 10 {
+  .line#{$i} {
+    display: -webkit-box;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: #{$i};
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+html {
+  font-family: "Microsoft YaHei", "微软雅黑", "Arial";
+  color: #000;
+  font-size: 14px;
+  background: #fff;
+}
+.posr {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.wrap {
+  position: relative;
+}
+.wrap .head {
+  position: relative;
+  background: url("../img/head/background.png");
+  height: 59.38vw;
+}
+.wrap .head img {
+  position: absolute;
+}
+.wrap .head .title {
+  top: 15vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 28vw;
+}
+.wrap .head .list {
+  position: absolute;
+  width: 93vw;
+  height: 30vw;
+  bottom: -22.5vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.wrap .head .logo {
+  width: 10vw;
+  left: 10vw;
+  top: 4vw;
+}
+.wrap .head .phone {
+  width: 15.6vw;
+  right: 3.4vw;
+  top: 2.7vw;
+}
+.wrap .head .qr {
+  width: 7.4vw;
+  right: 3.4vw;
+  bottom: 10.5vw;
+}
+.wrap .content {
+  margin-top: 27vw;
+  overflow: hidden;
+}
+.wrap .content img:nth-child(odd) {
+  transform: translateX(10%);
+}
+.wrap .content img:nth-child(even) {
+  margin: 8vw auto;
+  width: 70vw;
+}
+.wrap .content img:nth-child(4) {
+  width: 52vw;
+}
+.wrap .process .float {
+  display: flex;
+}
+.wrap .process .float img {
+  width: 50%;
+  height: 35vw;
+  transform: translateY(1px);
+}
+.wrap .process .float img:nth-child(2) {
+  transform: translateY(5.3vw);
+}
+.wrap .foot img {
+  height: 31vw;
+  position: absolute;
+  bottom: calc(-28vw);
+}
+.wrap .foot a {
+  position: absolute;
+  left: 50%;
+  bottom: -25vw;
+  transform: translate(-50%, 0);
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+{
+  "useTaobaoRegistry": false,
+  "presets": {
+    "init-airbnb": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "airbnb",
+          "lintOn": [
+            "save",
+            "commit"
+          ]
+        }
+      },
+      "router": true,
+      "routerHistoryMode": false,
+      "vuex": true,
+      "cssPreprocessor": "sass"
+    }
+  }
+}
